@@ -9,12 +9,15 @@ import PencilIcon from './assets/icons/pencil.svg?react';
 import PlusIcon from './assets/icons/plus.svg?react';
 import SpinnerIcon from './assets/icons/spinner.svg?react';
 import ButtonIcon from './components/button-icon';
+import InputText from './components/input';
+import InputCheckbox from './components/input-checkbox';
+import Card from './components/card';
 
 
 export default function App() {
 
   return (
-    <div className="grid gap-3">
+    <div className="grid gap-5">
       <div className="flex flex-col gap-2">
         <Text variant="body-sm-bold" className="text-pink-base">
             Hello Vite + React!
@@ -47,6 +50,18 @@ export default function App() {
         <ButtonIcon icon={TrashIcon}/>
         <ButtonIcon icon={TrashIcon} variant="secondary"/>
         <ButtonIcon icon={TrashIcon} variant="tertiary"/>
+      </div>
+
+      <div>
+        <InputText />
+      </div>
+
+      <div>
+        <InputCheckbox/>
+      </div>
+
+      <div>
+        <Card size="md">Olá Mundo</Card>
       </div>
 
     </div>
