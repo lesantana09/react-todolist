@@ -31,10 +31,10 @@ export default function PageComponents() {
             </div>
 
             <div className="flex gap-1">
-            <Icon svg={TrashIcon} className='fill-green-base'/>
-            <Icon svg={CheckIcon} className='fill-pink-base'/>
-            <Icon svg={PencilIcon} className='fill-pink-base'/>
-            <Icon svg={SpinnerIcon} animate/>
+                <Icon svg={TrashIcon} className='fill-green-base'/>
+                <Icon svg={CheckIcon} className='fill-pink-base'/>
+                <Icon svg={PencilIcon} className='fill-pink-base'/>
+                <Icon svg={SpinnerIcon} animate/>
             </div>
 
             <div className="flex gap-1">
@@ -43,15 +43,17 @@ export default function PageComponents() {
                 <Badge loading>5</Badge>
             </div>
 
-            <div>
-            <Button icon={PlusIcon}>Nova Tarefa</Button>
+            <div className="flex gap-1">
+                <Button icon={PlusIcon}>Nova Tarefa</Button>
+                <Button icon={PlusIcon} handling>Criando</Button>
             </div>
 
             <div className="flex gap-1">
-            <ButtonIcon icon={TrashIcon}/>
-            <ButtonIcon icon={TrashIcon} variant="secondary"/>
-            <ButtonIcon icon={TrashIcon} variant="tertiary"/>
-            <ButtonIcon icon={TrashIcon} loading/>
+                <ButtonIcon icon={TrashIcon}/>
+                <ButtonIcon icon={TrashIcon} variant="secondary"/>
+                <ButtonIcon icon={TrashIcon} variant="tertiary"/>
+                <ButtonIcon icon={TrashIcon} loading/>
+                <ButtonIcon icon={TrashIcon} handling/>
             </div>
 
             <div>
